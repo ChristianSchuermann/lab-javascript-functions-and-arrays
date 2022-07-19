@@ -7,7 +7,7 @@ function maxOfTwoNumbers(num1, num2) {
   else if (num2 > num1) {
     return num2;
   }
-  else if (num1 = num2) {
+  else if (num1 === num2) {
     return num1;
   }
 
@@ -108,15 +108,15 @@ const wordsUnique = [
 ];
 
 function uniquifyArray(wordsArray) {
-  if (!wordsArray.length) return null;
-      const unique = [];
+  if (!wordsArray.length) return null; 
+  const unique = [];
     for (const words of wordsArray) {
       if (!unique.includes(words)) {
         unique.push(words);
       }
     } 
     return unique;
-  }
+}
 
   
 // Iteration #6: Find elements
